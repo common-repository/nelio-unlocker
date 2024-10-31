@@ -1,0 +1,40 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "tsconfig.json"
+	},
+	"env": {
+		"es6": true,
+		"node": true
+	},
+	"plugins": [
+		"@typescript-eslint",
+		"@wordpress/eslint-plugin",
+		"functional",
+		"prettier"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		"plugin:functional/no-mutations",
+		"plugin:functional/no-object-orientation",
+		"plugin:functional/no-exceptions",
+		"plugin:jest/recommended",
+		"plugin:@wordpress/eslint-plugin/recommended-with-formatting"
+	],
+	"rules": {
+		"no-undef": "off",
+		"no-undefined": "error",
+		"no-unused-vars": "off",
+		"@typescript-eslint/no-unused-vars": "error",
+		"no-redeclare": "off",
+		"@typescript-eslint/no-redeclare": "error",
+		"no-mixed-operators": "off",
+		"@typescript-eslint/explicit-function-return-type": "error",
+		"functional/no-expression-statement": "error",
+		"functional/no-return-void": "error"
+	}
+}

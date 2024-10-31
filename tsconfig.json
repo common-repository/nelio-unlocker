@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"allowJs": false,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"declaration": false,
+		"jsx": "react",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"outDir": "dist",
+		"resolveJsonModule": true,
+		"strictBindCallApply": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"target": "es2017",
+		"paths": {
+			"@nelio-unlocker/components": [ "src/components" ],
+			"@nelio-unlocker/data": [ "src/data" ],
+			"@nelio-unlocker/hooks": [ "src/hooks" ],
+			"@nelio-unlocker/types": [ "src/types" ]
+		}
+	}
+}
